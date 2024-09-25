@@ -1,0 +1,20 @@
+# Required packages for ShieldPass
+
+# For hashing and password management
+bcrypt==4.0.1
+passlib==1.7.4
+
+# For network requests (if applicable)
+requests==2.31.0
+
+# For working with different hash algorithms
+hashlib
+
+# For logging
+loguru==0.6.0
+
+# For command-line interface (if applicable)
+argparse
+
+# For testing
+pytest==7.3.1
