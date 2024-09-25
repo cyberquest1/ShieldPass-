@@ -1,21 +1,24 @@
-"""
-ShieldPass: Password Bypass & Cracking Tool
+# src/__init__.py
 
-This package contains modules and functionalities for 
-analyzing and exploiting password vulnerabilities.
+"""
+ShieldPass Package
+
+This package contains modules for demonstrating Android password security vulnerabilities,
+including methods for bypassing and cracking passwords.
 """
 
-# Import necessary modules for ease of access
-from .shieldpass import main
-from .bypass import PasswordBypass
-from .cracking import PasswordCracker
-from .hash_cracker import HashCracker
-from .utils import Logger
+# Import relevant classes or functions from the modules
+from .shieldpass import main  # Assuming main() is your entry point function in shieldpass.py
+from .android_cracker import crack_password  # Example function to crack passwords
+from .bypass import bypass_lock  # Example function to bypass Android locks
+from .utils import load_resources  # Utility function to load educational resources
+from .educational_resources import get_best_practices, get_common_vulnerabilities  # Functions to get educational content
 
 __all__ = [
-    "main",
-    "PasswordBypass",
-    "PasswordCracker",
-    "HashCracker",
-    "Logger"
+    'main',
+    'crack_password',
+    'bypass_lock',
+    'load_resources',
+    'get_best_practices',
+    'get_common_vulnerabilities'
 ]
